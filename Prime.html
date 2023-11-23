@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie House</title>
+    <link rel="shortcut icon" href="https://i.pinimg.com/474x/4f/72/60/4f7260bf429cae499da03188f3aa1904.jpg" type="image/x-icon">
+    <style>
+        *{
+            color: white;
+            overflow: hidden;
+        }
+
+        body{
+            width: 100%;
+            margin: 0%;
+            padding: 0%;
+            background: url(https://i.pinimg.com/474x/18/6a/87/186a8730e737ae4b61f4a0b3c46cd356.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+    
+        nav{
+            font-size: larger;
+            text-align: center;
+            background-color: black;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:8px;
+            width: 100%;
+            height: 60px;
+            
+            
+        }
+
+        img{
+            width: 100px;
+            border-radius: 100px;
+        }
+
+        input{
+
+            width: 200px;
+            padding: 20px;
+            border: none;
+            outline: none;
+            border-radius: 100px;
+            font-size: large bold;
+            text-decoration: none;
+            border: 0;
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            align-items: end;
+            justify-content: flex-end;
+            width: fit-content;
+            flex: 3;
+            border-radius: 100px;
+            
+
+        }
+
+        li{
+            list-style: none;
+            font-size: larger;
+            text-align: center;
+            border: solid 2px rgb(77, 9, 9);
+            background-color: black;
+            padding: 10px;
+            border-radius: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        ul li select{
+        border: none;
+        font-size:20px ;
+        }
+
+         ul li select:hover{
+        background:red
+            background-size:cover;
+            background-repeat:no-repeat;
+            cursor:pointer;
+            
+        }
+
+         select{
+         background-color: black;
+         padding: 2px;
+         border-radius: 100px;
+         }
+ 
+        li:hover{
+        background:url(https://i.pinimg.com/474x/36/7b/7b/367b7b8ffbe08a6724704493f6f7522b.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            cursor: pointer;
+
+         }
+
+        .bigtext{
+
+            font-size: 90px;
+        }
+
+        .medtext{
+            font-size: xx-large;
+        }
+
+        button{
+            font-size: xx-large;
+            background-color: black;
+            border: 2px solid  rgb(77, 9, 9);
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        button:hover{
+            background:url(https://i.pinimg.com/474x/36/7b/7b/367b7b8ffbe08a6724704493f6f7522b.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            cursor: pointer;
+
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .rand1{
+            width: 20%;
+            height: 60%;
+            float:right;
+            border-radius: 0;
+        }
+
+        .rand2{
+            width: 25%;
+            height:80%;
+            float:right;
+            border-radius:0;
+        }        
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <img src="https://i.pinimg.com/474x/4f/72/60/4f7260bf429cae499da03188f3aa1904.jpg" alt="logo">
+            <h2> Movie House</h2>
+
+            <div class="search_bar">
+                <input type="search" placeholder="How's Your Mood?">
+            </div>
+
+            <ul>
+                <li style="text-decoration: none;"><a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dvm_pds_amz_in_as_s_gm_sitem_mkw_symCJqBmk-dc?mrntrk=pcrid_657901934582_slid__pgrid_84577172528_pgeo_9062066_x__adext_23833119309_ptid_kwd-339065342343">Home</a></li>
+                <li>
+                    <select name="Language" id="Language">
+                        <option value="Language">Language</option>
+                        <hr>
+                        <option value="Kannada">Kannada</option>
+                        <hr>
+                        <option value="Hindi">Hindi</option>
+                        <hr>
+                        <option value="English">English</option>
+                        <hr>
+                        <option value="Telugu">Telugu</option>
+                        <hr>
+                        <option value="Tamil">Tamil</option>
+                        <hr>
+                        <option value="Malayalam">Malayalam</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="Webseries" id="Webseries">
+                        <option value="Family">Webseries</option>
+                        <hr>
+                        <option value="Family">Family</option>
+                        <hr>
+                        <option value="Horror">Horror</option>
+                        <hr>
+                        <option value="Crime">Crime</option>
+                        <hr>
+                        <option value="Anime">Anime</option>
+                        <hr>
+                        <option value="K-drama">K-drama</option>
+                    </select>
+                </li>
+                <li>About</li>
+                <li>Upload</li>
+            </ul>
+        </nav>
+    </header>
+     
+    <div class="text">
+        <img class="rand1" src="https://i.pinimg.com/474x/c3/37/e4/c337e430ce052908202cb358d5a189a4.jpg" alt="">
+        <img class="rand2" src="https://i.pinimg.com/564x/f2/2e/3c/f22e3cad0a5a550d957362ad70181053.jpg" alt="">
+        <p><span class="bigtext">Welcome to <br> The Movie House</span> 
+            <br>
+            <span class="medtext">Watch the latest movies, TV shows, and award-winning <br> House Originals</span>
+        </p>
+
+        <button>Sign in To Join </button>
+    </div>
+
+    
+</body>
+</html>
